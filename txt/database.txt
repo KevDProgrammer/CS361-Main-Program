@@ -1,0 +1,4 @@
+Nier Replicant ~ gp-nr.html
+Nier Automata ~ gp-na.html
+Nier Reincarnation ~ gp-nr2.html
+#: AA ~ search-genre-AA.html

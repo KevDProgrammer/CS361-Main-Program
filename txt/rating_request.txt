@@ -1,0 +1,2 @@
+action=sorted_ratings
+title=list_all
