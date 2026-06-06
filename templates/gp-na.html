@@ -1,0 +1,64 @@
+<!-- Game Page for Nier Automata -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page: Nier Automata</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gp-layout">
+            <div class="gp-img-box"><img id="AutomataGalleryImage" src="images/Nier_Automata_Photo.jpg" alt="Nier Automata image"></div>
+                    
+            <div class="gp-info-box">
+                <h2> 
+                    NieR:Automata 
+                    <span id="ratingDisplay" class="rating"></span>
+                </h2>
+                <h3>
+                    Set in a desolate world in the year 11,945 AD, NieR:Automata 
+                    features the long-standing war between the Machine Lifeforms 
+                    and the Androids, humanity's last hope. As 2B and 9S traverse 
+                    the post-apocalyptic wasteland where human society once reign 
+                    and thrived, their missions and duty as YoRHa soldiers led to 
+                    discoveries and the uncovering of forbidden truths.
+                </h3>
+                <h3>   
+                    The truth of humanity and the values of life. Do these grand 
+                    purposes hold the same weight for Androids and Machines? For 
+                    the moment being, the annihilation of the wretched machinery 
+                    is all that matters.
+                </h3>
+            </div>
+        </div>
+
+        <button onclick="transmitImageRequest('first', 'Nier Automata', 'AutomataGalleryImage')">Left-most</button>
+        <button onclick="transmitImageRequest('previous', 'Nier Automata', 'AutomataGalleryImage')">Previous</button>
+        <button onclick="transmitImageRequest('next', 'Nier Automata', 'AutomataGalleryImage')">Next</button>
+        <button onclick="transmitImageRequest('last', 'Nier Automata', 'AutomataGalleryImage')">Right-most</button>
+
+        <div class="music-section">
+            <button onclick="transmitMusicRequest('play', 'Nier Automata')">Play</button>
+            <button onclick="transmitMusicRequest('stop', 'Nier Automata')">Stop</button>
+            <button onclick="transmitMusicRequest('shuffle', 'Nier Automata')">Shuffle Music</button>
+        </div>
+    </main>
+    <script src="connect.js"></script>
+    <script src="connection.js"></script>
+    <script src="bridge.js"></script>
+    <script>ratingSetter("Nier Automata");</script>
+</body>
+</html>

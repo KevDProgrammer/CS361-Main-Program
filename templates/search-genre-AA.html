@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Search Page: AA Titles</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <div class="nav-section">
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                </ul>
+            </nav>
+
+            <form id="search-bar" action="/search" method="POST">
+                <label for="search-input"> Search: </label>
+                <input type="text" id="search-input" name="game">
+            </form>
+        </div>
+    </header>
+    
+    <main class="home-layout">
+        <h2>Browse our game catalogs and discover more about each game!</h2>
+        <h2>Base on your search, here is what we found...</h2>
+        
+        <table id="games-table">
+            <tr>
+                <td class="img-col"><img src="images/Nier_Replicant_Poster.jpg" alt="Nier Replicant image"></td>
+                <td class="name-col">
+                    <a href="gp-nr.html">
+                        NieR Replicant ver.1.22474487139...
+                    </a>
+                    <p>Score: 8.3/10</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="img-col"><img src="images/Nier_Automata_Poster.jpg" alt="Nier Automata image"></td>
+                <td class="name-col">
+                    <a href="gp-na.html">
+                        NieR:Automata
+                    </a>
+                    <p>Score: 8.8/10 </p>
+                </td>
+            </tr>
+        </table>
+    
+        
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- Game Page for Nier Reincarnation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page: Nier Reincarnation</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gp-layout">
+            <div class="gp-img-box"><img id="ReincarnationGalleryImage" src="images/Nier_Reincarnation_Photo.jpg" alt="Nier Reincarnation image"></div>
+                    
+            <div class="gp-info-box">
+                <h2> 
+                    NieR Reincarnation
+                    <span id="ratingDisplay" class="rating"></span>
+                </h2>
+                <h3>
+                    The spin-off to the Nier/Drakengard series, this mysterious
+                    narrative-driven game features rich independent stories,
+                    accompanied by beautiful soundtracks, as well as additional 
+                    lore to other existing titles.
+                </h3>
+                <h3>   
+                    Awaken from a deep slumber, where the beginning is nigh but 
+                    forgotten, a young girl finds herself in the cell of a tower, 
+                    where with each wandering attempt, paths strech endlessly
+                    before her. Who are they? What is this place? Why are they 
+                    here? Their memory is but an empty shell, but perhaps the 
+                    paths forward may reveal some answers. 
+                </h3>
+                <h3>
+                    (Expect turn-based battles and a friendly gacha system)
+                </h3>
+            </div>
+        </div>
+
+        <button onclick="transmitImageRequest('first', 'Nier Reincarnation', 'ReincarnationGalleryImage')">Left-most</button>
+        <button onclick="transmitImageRequest('previous', 'Nier Reincarnation', 'ReincarnationGalleryImage')">Previous</button>
+        <button onclick="transmitImageRequest('next', 'Nier Reincarnation', 'ReincarnationGalleryImage')">Next</button>
+        <button onclick="transmitImageRequest('last', 'Nier Reincarnation', 'ReincarnationGalleryImage')">Right-most</button>
+
+        <div class="music-section">
+            <button onclick="transmitMusicRequest('play', 'Nier Reincarnation')">Play</button>
+            <button onclick="transmitMusicRequest('stop', 'Nier Automata')">Stop</button>
+            <button onclick="transmitMusicRequest('shuffle', 'Nier Reincarnation')">Shuffle Music</button>
+        </div>
+    </main>
+    <script src="connect.js"></script>
+    <script src="connection.js"></script>
+    <script src="bridge.js"></script>
+    <script>ratingSetter("Nier Reincarnation");</script>
+</body>
+</html>

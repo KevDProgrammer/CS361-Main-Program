@@ -1,0 +1,63 @@
+<!-- Game Page for Nier Replicant -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page: Nier Replicant</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gp-layout">
+            <div class="gp-img-box"><img id="ReplicantGalleryImage" src="images/Nier_Replicant_Photo.jpg" alt="Nier Replicant image"></div>
+                    
+            <div class="gp-info-box">
+                <h2> 
+                    NieR Replicant ver.1.22474487139... 
+                    <span id="ratingDisplay" class="rating"></span>
+                </h2>
+                <h3>
+                    The upgraded prequel of NieR:Automata. The world was 
+                    ravaged in 2003, after the horrific incident involving The 
+                    Giant. A deadly outbreak followed, and drove humanity 
+                    to its near extinction. What emerged from this tragety, 
+                    was a world that was no longer the same.
+                </h3>
+                <h3>   
+                    Roughly 1400 years later, a kind young man sets out with 
+                    Grimoire Weiss, a strange talking book, to search for the 
+                    "Sealed Verses" in order to save his sister Yonah, who fell 
+                    terminally ill to the Black Scrawl.
+                </h3>
+            </div>
+        </div>
+
+        <button onclick="transmitImageRequest('first', 'Nier Replicant', 'ReplicantGalleryImage')">Left-most</button>
+        <button onclick="transmitImageRequest('previous', 'Nier Replicant', 'ReplicantGalleryImage')">Previous</button>
+        <button onclick="transmitImageRequest('next', 'Nier Replicant', 'ReplicantGalleryImage')">Next</button>
+        <button onclick="transmitImageRequest('last', 'Nier Replicant', 'ReplicantGalleryImage')">Right-most</button>
+
+        <div class="music-section">
+            <button onclick="transmitMusicRequest('play', 'Nier Replicant')">Play</button>
+            <button onclick="transmitMusicRequest('stop', 'Nier Replicant')">Stop</button>
+            <button onclick="transmitMusicRequest('shuffle', 'Nier Replicant')">Shuffle Music</button>
+        </div>
+    </main>
+    <script src="connect.js"></script>
+    <script src="connection.js"></script>
+    <script src="bridge.js"></script>
+    <script>ratingSetter("Nier Replicant");</script>
+</body>
+</html>

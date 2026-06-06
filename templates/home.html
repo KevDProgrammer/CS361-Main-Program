@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accord Collection</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <div class="nav-section">
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                </ul>
+            </nav>
+
+            <form id="search-bar" action="/search" method="POST">
+                <label for="search-input"> Search: </label>
+                <input type="text" id="search-input" name="game">
+            </form>
+        </div>
+    </header>
+
+    <main class="home-layout">
+        <h2>Welcome to the Accord Collection</h2>
+        <div class="extra-row">
+            <h2>Browse our game catalogs and discover more about each game!</h2>
+            
+            <a href="sorted-rating.html" class="sorted-rating-button" onclick="clickSE(event)">Rating Page - Highest to Lowest</a>
+            <audio id="click-sound" src="sounds/NierUI3.mp3"></audio>
+
+            <a href="help.html" class="help-button" onclick="clickSE(event)">?</a>
+            <audio id="click-sound" src="sounds/NierUI2.mp3"></audio>
+        </div>
+
+        <table id="games-table">
+            <tbody>
+                <tr>
+                    <td class="img-col"><img src="images/Nier_Replicant_Poster.jpg" alt="Nier Replicant image"></td>
+                    <td class="name-col">
+                        <a href="gp-nr.html">
+                            NieR Replicant ver.1.22474487139...
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img-col"><img src="images/Nier_Automata_Poster.jpg" alt="Nier Automata image"></td>
+                    <td class="name-col">
+                        <a href="gp-na.html">
+                            NieR:Automata
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img-col"><img src="images/Nier_Reincarnation_Poster.jpg" alt="Nier Reincarnation image"></td>
+                    <td class="name-col">
+                        <a href="gp-nr2.html">
+                            NieR Reincarnation
+                        </a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </main>
+    <script src="sound.js"></script> <!-- for sound js -->
+</body>
+</html>

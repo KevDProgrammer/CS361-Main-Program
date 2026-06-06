@@ -1,0 +1,239 @@
+/* This is the style sheet for Accord Colelction */
+
+/* Page Layout */
+body {
+    background-color: #5f5554
+}
+
+/* Website font-size & edge spacing */
+h1 {
+    font-size: 48px;
+    padding: 0 20px; /* spacing */
+}
+
+
+/* For the navigation layout + search */
+.nav-section {
+    display: flex;
+    justify-content: space-between; /* nav bar on left, search bar on right. */
+    padding-right: 20px;
+    align-items: center; /* set the nav box and search box vertically aligned */
+}
+
+nav {
+    padding: 0 20px; /* spacing from screen edge (vertical) & (horizontal) */ 
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 40px; /* size of its interactive box */
+}
+
+nav li a:hover:not(.active) {
+    background-color: #afa7a5;
+}
+
+nav li a.active {
+    color: #000000;
+    border: 2px solid #000000;
+    background-color: #afa7a5;
+}
+
+nav li a.active:hover {
+    border: 2px solid #000000;
+    background-color: #5f5554;
+}
+
+#search-bar {
+    font-size: 24px;
+}
+
+#search-input {
+    font-size: 24px;
+    background-color: #afa7a5;
+}
+
+/* For spacing from screen edges (home page) */
+.home-layout {
+    padding: 0 20px;
+}
+
+/* For the extra row section (with help button + sorted rating page button) */
+.extra-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* making it round :> */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #afa7a5;
+    border: 2px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-button:hover {
+    background-color: transparent;
+}
+
+.sorted-rating-button {
+    width: 280px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #afa7a5;
+    border: 2px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-button:hover {
+    background-color: transparent;
+}
+
+/* For the table (list of games) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    padding: 0px;
+    border: 2px solid #000000;
+    background-color: #847977;
+}.img-col {
+    width: 10%;
+}.name-col {
+    width: 90%;
+    padding-left: 20px;
+    font-size: 28px;
+    vertical-align: top; /* text aligned to top */
+    padding-top: 20px; /* give some spacing from top */
+}
+
+/* For the images (list of games)*/
+img {
+  width: 100%;
+  height: 200px; /* using 200px height for visual sake */
+  display: block;
+}
+
+/* Game page action key */
+.name-col a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.name-col:hover { /* hover over the entire title box */
+    background-color: #afa7a5;
+    color: #5f5554;
+    cursor: pointer;
+}
+
+/* For the GP table (Unique Game Page) */
+.gp-layout {
+    display: flex;
+    gap: 30px; /* for in between each box */
+    padding: 20px; /* space from screen edge for respective box (left & right) */
+    margin-top: 40px; /* gap between nav and gp boxes */
+}
+
+.gp-img-box {
+    width: 55%;
+    height: 500px;
+}
+
+.gp-info-box {
+    width: 45%;
+    vertical-align: top; /* text aligned to top */
+    background-color: #847977;
+    border: 2px solid #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* For the rating on GP (create gap from name and right-edge) */
+.gp-info-box h2 {
+    display: flex;
+    justify-content: space-between; /* pushes it to right */
+}
+
+.gp-img-box img {
+    width: 100%;
+    height: 450px;
+}
+
+/* for the help menu page (section box layout) */
+.help-section {
+    width: 80%;
+    border: 2px solid #000000;
+    margin: 48px auto;
+}
+
+.help-title {
+    background-color: #afa7a5;
+    border-bottom: 2px solid #000000;
+    padding: 1px;
+    text-align: center;
+}
+
+.help-info {
+    background-color: #847977;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.help-info h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.help-info p {
+    padding-left: 20px;
+}
+
+.help-info h3 {
+    font-size: 24px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+/* color palette 
+    Soft Gray - #afa7a5
+    The Inbetween - #847977
+    Shadow Brown - #5f5554
+*/

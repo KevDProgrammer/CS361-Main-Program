@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted Rating Page</title>
+    <link rel="stylesheet" href="style-s.css">
+
+</head>
+<body>
+    <header>
+        <h1>Accord Collection</h1>
+        <div class="nav-section">
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                </ul>
+            </nav>
+
+            <form id="search-bar" action="/search" method="POST">
+                <label for="search-input"> Search: </label>
+                <input type="text" id="search-input" name="game">
+            </form>
+        </div>
+    </header>
+    
+    <main class="home-layout">
+        <h2>Browse our game catalogs and discover more about each game!</h2>
+        <h3>Every Available Game Titles [Ratings Sorted By: Highest-to-Lowest]</h3>
+        <div id="rankedDisplay"></div>
+    </main>
+    <script src="bridge.js"></script>
+    <script>rankedSetter();</script>
+</body>
+</html>
